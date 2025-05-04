@@ -1,0 +1,12 @@
+body{
+    width: 400px;
+    height: 700px;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+h1, .btn{
+    font-size: 2rem !important;
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Zara Visual Search",
+    "version": "1.0.0",
+    "description": "Search Zara products using screenshots",
+    "manifest_version": 3,
+    "permissions": ["storage", "tabs", "activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["./scripts/popup.js"],
+            "css": ["./css/popup.css"]
+        }
+    ],
+    "action": {
+        "default_title": "ZaraSearcher",
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon.jpeg",
+            "48": "icon.jpeg",
+            "128": "icon.jpeg"
+            }
+    },
+    "icons": {
+        "16": "icon.jpeg",
+        "48": "icon.jpeg",
+        "128": "icon.jpeg"
+    }
+}
